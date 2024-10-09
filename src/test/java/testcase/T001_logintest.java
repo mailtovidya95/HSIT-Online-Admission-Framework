@@ -14,7 +14,7 @@ public class T001_logintest extends basetest {
     public void logincheck() {
         loginpage hm = new loginpage(driver);
         hm.setEnterUsername("ADMIN");
-        hm.seteNTERPASSWORD("711");
+        hm.seteNTERPASSWORD("7119");
         hm.setSubmit();
     }
 }
