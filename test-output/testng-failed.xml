@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="window"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testcase.T003_students">
+        <methods>
+          <include name="student"/>
+          <include name="close"/>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- testcase.T003_students -->
+      <class name="testcase.T005_exam">
+        <methods>
+          <include name="close"/>
+          <include name="setDriver"/>
+          <include name="exam"/>
+        </methods>
+      </class> <!-- testcase.T005_exam -->
+      <class name="testcase.T004_personal">
+        <methods>
+          <include name="close"/>
+          <include name="personal"/>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- testcase.T004_personal -->
+      <class name="testcase.T002_Dashboard">
+        <methods>
+          <include name="close"/>
+          <include name="dashborad"/>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- testcase.T002_Dashboard -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
